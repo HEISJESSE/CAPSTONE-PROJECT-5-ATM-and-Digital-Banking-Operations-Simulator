@@ -18,11 +18,3 @@ class CashMachine:
 
     def check_balance(self):
         print(f"Current Balance: ₦{self.balance}")
-
-
-# Example Usage
-atm = CashMachine(5000)
-
-atm.deposit(2000)
-atm.withdraw(1500)
-atm.check_balance()
