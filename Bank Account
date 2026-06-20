@@ -1,0 +1,23 @@
+class BankAccount:
+    def __init__(self, account_number, balance=0):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(f"₦{amount} deposited successfully.")
+        else:
+            print("Invalid deposit amount.")
+
+    def withdraw(self, amount):
+        if amount <= 0:
+            print("Invalid withdrawal amount.")
+        elif amount > self.balance:
+            print("Insufficient funds.")
+        else:
+            self.balance -= amount
+            print(f"₦{amount} withdrawn successfully.")
+
+    def display_balance(self):
+        print(f"Current Balance: ₦{self.balance}")
