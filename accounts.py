@@ -32,17 +32,4 @@ class SavingsAccount(BankAccount):
         print(f"₦{amount} withdrawn successfully.")
 
 
-# Test Code
-if __name__ == "__main__":
-    account = SavingsAccount("2024154094", 20000)
 
-    print(f"Initial Balance: ₦{account.balance}")
-
-    account.deposit(5000)
-    print(f"Balance after deposit: ₦{account.balance}")
-
-    account.withdraw(10000)
-    print(f"Balance after withdrawal: ₦{account.balance}")
-
-    # This will raise an error
-    account.withdraw(11000)
